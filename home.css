@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+body{
+    background-color : whitesmoke;
+    height: 270vh;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    display: flex;
+    margin-top: 5
+    px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 0.8rem rgba(0, 0, 0, 0.5);
+    top: 0%;
+    position: sticky;
+}
+
+
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+.links{
+    justify-content: center;
+    padding-right: 110px;
+}
+
+ul li a{
+    text-decoration: none;
+    margin-left: 2rem;
+    color: #000;
+    position: relative;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    background-color: black;
+    color: white;
+    padding:10px;
+    border-radius: 12px;
+    text-decoration: underline;
+}
+
+.logo{
+    margin-left: 14px;
+}
+
+input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    border-radius: 1rem;
+    color: #fff;
+}
+
+input::placeholder{
+    color: yellow;
+
+}
+
+
+
+.active{
+    color: var(--primary-color);
+}
+
+a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    margin-top: 0.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover::after{
+    width: 100%;
+}
+#search-box{
+    color: white;
+    background-color: skyblue;
+    margin-left: 20px;
+    caret-color: yellow;
+    height: 45px;
+    font-size: medium;
+    font-family: sans-serif;
+    border: 2px solid black;
+}
+
+
+.searchbutton{
+    height: 30px;
+    border-radius: 15px;
+    width: 80px;
+}
+.searchbutton:hover{
+background-color: black;
+color: white;
+}
+
+                       /*main content area design*/
+
+section{
+    width :65%;
+    float : left;
+    height: 220vh;
+    background: grey;
+
+}
+
+.right-column{
+    width: 33%;
+    float: left;
+    height: 120vh;
+    background: grey;
+    border-left: 2px solid black;
+    margin-left: 2%;
+    word-wrap: break-word;
+
+}
+.main::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.content-java {
+    width: 800px;
+   padding: 40px;
+    overflow: hidden;
+}
+.content-java img {
+    margin-right: 15px;
+    float: left;
+    height: 100px;
+    width: 115px;
+}
+.content-java h3, .content-java p{
+    margin-left: 15px;
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+ .footer1{
+    background-color: #4caf50;
+    padding: 15px;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+   
+
+ }
+ .footer1 a{
+    color: #fff;
+    line-height: 24px;
+    display: block;
+ }
+
+ footer{
+     display: block;
+ }
+.footer, .column4{
+    
+    width: 21%;
+    float: right;
+}
+.footer2{
+    clear: both;
+    background-color: #3b753d;
+    padding: 10px;
+    text-align: center;
+}
+.footer1, .footer2{
+    margin: 0;
+    color: #fff;
+}
+.column4{
+    display: block;
+}
+
+/* Right side content Here */
+
+
+ .rightside-content{
+    width: 450px;
+   padding: 35px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.rightside-content img {
+    margin-right: 6px;
+    height: 160px;
+    width: 330px;
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.rightside-content h3, .rightside-content p{
+    margin-left: 15px;
+    display: block;
+    margin: 10px 0 10px 0;
+   word-wrap: break-word;
+}
+
+
+.feedback-form{
+    border: 2px solid blue;
+    background-color: gray;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.submit{
+    background-color: black;
+    margin-bottom: 10px;
+    
+}
+.submit:hover{
+    background-color: white;
+    color: black;
+}
+#myname{
+    color: #000;
+    caret-color: black;
+    cursor: pointer;
+}
+
+#myemail{
+    color: #000;
+    caret-color: black;
+    cursor: pointer;
+}
+
+#mytext{
+    color: #000;
+    caret-color: black;
+    cursor: pointer;
+}
